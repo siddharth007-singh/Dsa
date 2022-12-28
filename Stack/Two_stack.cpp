@@ -35,7 +35,7 @@ class Two_stack{
         }
     }
     int pop1(){
-        if(top1=>0){
+        if(top1>=0){
             int ans = arr[top1];
             top1--;
             return ans;
@@ -46,7 +46,7 @@ class Two_stack{
         }
     }
     int pop2(){
-         if(top2=>0){
+         if(top2>=0){
             int ans = arr[top2];
             top2++;
             return ans;
@@ -68,6 +68,6 @@ int main() {
 
     ses.pop1();
     ses.pop2();
-    
+
     return 0;
 }
