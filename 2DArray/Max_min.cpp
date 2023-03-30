@@ -46,7 +46,7 @@ int main(){
 
     printRowWise(arr, rows, col);
 
-
+    cout<<maxMin(arr, 3,3);
 
     
 
