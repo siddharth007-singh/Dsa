@@ -45,7 +45,12 @@ int main(){
     }
 
     printRowWise(arr, rows, col);
-    cout<<Linear(arr, rows, col, key);
+    if(Linear(arr, 3, 3, key)){
+        cout<<"true";
+    }
+    else{
+        cout<<"False";
+    }
 
     return 0;
 }
