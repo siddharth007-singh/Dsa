@@ -53,12 +53,12 @@ int main(){
 
     ///////////////////////////////////////////////////////////3Pointer apporach
 
-    int l=0, m=0, h=arr.size()-1;
+    int index=0, m=0, h=arr.size()-1;
 
     while(m<=h){
         if(arr[m]==0){
-            swap(arr[l], arr[m]);
-            l++, m++;
+            swap(arr[index], arr[m]);
+            index++, m++;
         }
 
         else if(arr[m]==1){
