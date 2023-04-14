@@ -20,6 +20,7 @@ int findDuplicate(vector<int> &arr)
 
 int main(){
     vector<int>arr{4, 2, 1, 3, 1};
+
     cout<<findDuplicate(arr);
     return 0;
 }
