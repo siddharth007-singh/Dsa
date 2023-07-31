@@ -7,8 +7,25 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
+#include<unordered_map>
+
 
 using namespace std;
+
+// int FristRepeat(vector<int> &arr){
+//     unordered_map<int, int>hash;  
+//     for(int i=0; i<arr.size(); i++){
+//         hash[arr[i]]++;
+//     }
+
+//     for(int i=0; i<arr.size(); i++){
+//         if(hash[arr[i]]>1){
+//             return arr[i]; 
+//         }
+//     }
+//     return -1;
+// }
+
 
 int BinarySerach(vector<int> &arr, int k){
     int s=0, e=arr.size()-1;
@@ -39,6 +56,10 @@ int main(){
     int k =4;
     int ans = BinarySerach(arr, k);
     cout<<ans;
+
+    // with 0(N) time complexity
+    // int ans = FristRepeat(arr);
+    // cout<<ans;
     return 0;
 
 }
