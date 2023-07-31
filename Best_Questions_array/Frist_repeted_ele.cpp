@@ -18,6 +18,7 @@ int FristRepeat(vector<int> &arr){
     for(int i=0; i<arr.size(); i++){
         if(hash[arr[i]]>1){
             return arr[i]; 
+            // return i;
         }
     }
     return -1;
@@ -41,6 +42,7 @@ int FristRepeat(vector<int> &arr){
 
 int main(){
     vector<int>arr{1,5,3,4,3,5,6}; 
+    // vector<int>arr{1,3,4,4,4,4,4,6,7,8}; 
     int ans = FristRepeat(arr);
     cout<<ans;
     return 0;
