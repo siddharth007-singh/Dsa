@@ -4,16 +4,13 @@
 
 using namespace std;
 
-int missing_ele(vector<int> &arr){
+int missing_ele(int num){
     
 }
 
 int main(){
-    vector<int> arr{1,2,3,4,6,7,8};
-    int ans = Sqaure_root(arr);
+    int num = 5;
+    int ans = Sqaure_root(num);
     cout<<ans;
     return 0;
 }
-
-
-1:40:43
