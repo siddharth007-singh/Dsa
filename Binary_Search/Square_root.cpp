@@ -6,7 +6,7 @@ using namespace std;
 
 int Sqaure_root(int n){
     int s=0, e=n;
-    int ans;
+    float ans;
     int mid = (s+e)/2;
 
     while(s<=e){
@@ -28,7 +28,7 @@ int Sqaure_root(int n){
 
 int main(){
     int key = 17;
-    int ans = Sqaure_root(key);
+    float ans = Sqaure_root(key);
     cout<<ans;
     return 0;
 }
