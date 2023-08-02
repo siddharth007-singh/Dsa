@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int missing_ele(int num){
+int Sqaure_root(int num){
     
 }
 
