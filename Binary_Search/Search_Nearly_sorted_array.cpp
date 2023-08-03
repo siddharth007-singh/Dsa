@@ -6,6 +6,8 @@ using namespace std;
 
 int UsingBinarySearch(vector<int> &arr, int k){
     int s=0, e=arr.size()-1;
+    vector<int> ans;
+
     while(s<=e){
         int mid = s+(e-s)/2;
         if(arr[mid]==k){
