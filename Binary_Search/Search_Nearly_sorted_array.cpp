@@ -32,7 +32,7 @@ int UsingBinarySearch(vector<int> &arr, int k){
 
 int main(){
     vector<int> arr{10,3,40,20,50,80,70};
-    int target = 80;
+    int target = 50;
     int ans = UsingBinarySearch(arr, target);
     cout<<ans;
     return 0;
