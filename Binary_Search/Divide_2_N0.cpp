@@ -22,8 +22,8 @@ int DivideTwoNUm(int divident, int divisor){
             e=mid-1;
         }
         else{
-            //store the ans 
-            //do right search
+            //store the ans.. 
+            //do right search..
             ans= mid;
             s = mid+1;
         }
