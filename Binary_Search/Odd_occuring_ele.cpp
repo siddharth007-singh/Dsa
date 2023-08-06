@@ -5,6 +5,7 @@
 using namespace std;
 
 int main(){
-    Thsi is 
+    vector<int> arr{1,1,2,2,3,3,4,4,3,600,600,4,4};
+    
     return 0;
 }
