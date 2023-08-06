@@ -17,11 +17,11 @@ int OddOccurance(vector<int> &arr){
 
         if(mid%2==0){
             if(arr[mid]==arr[mid+1]){
-                
+                s = mid+2;
             }
-        }
-        else{
-
+            else{
+                e=mid;
+            }
         }
     }
 }
