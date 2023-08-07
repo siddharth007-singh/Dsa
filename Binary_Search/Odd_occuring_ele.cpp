@@ -8,9 +8,9 @@
 using namespace std;
 
 int OddOccurance(vector<int> &arr){
-    int s=0, e=arr.size()-1;
+    int s=0, e=arr.size()-1;4
     while(s<=e){
-        int mid = s(e-s)/2;
+        int mid = s+(e-s)/2;
         if(s==e){
             return s;
         }
@@ -23,7 +23,16 @@ int OddOccurance(vector<int> &arr){
                 e=mid;
             }
         }
+        else{
+            if(arr[mid]==arr[mid-1]){
+                s = mid+1;
+            }
+            else{
+                e = mid-1;
+            }
+        }
     }
+    return -1;
 }
 
 int main(){
