@@ -8,7 +8,7 @@
 using namespace std;
 
 int OddOccurance(vector<int> &arr){
-    int s=0, e=arr.size()-1;4
+    int s=0, e=arr.size()-1;
     while(s<=e){
         int mid = s+(e-s)/2;
         if(s==e){
