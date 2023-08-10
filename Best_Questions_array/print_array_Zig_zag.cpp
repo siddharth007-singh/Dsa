@@ -4,14 +4,15 @@
 
 using namespace std;
 
-int SortedandRotated(vector<int> &arr){
-    
-    
+void SortedandRotated(vector<int> &arr){
+
+    for(int i=0; i<arr,szie(); i++){
+        cout<<arr[i];
+    }    
 }
 
 int main(){
     vector<int> arr{4, 3, 7, 8, 6, 2, 1};
-    int ans = SortedandRotated(arr);
-    cout<<ans;
+    cout<<SortedandRotated(arr);
     return 0;
 }
