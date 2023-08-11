@@ -8,6 +8,7 @@ void SortedandRotated(vector<int> &arr){
 
     for(int i=0; i<arr,szie(); i++){
         cout<<arr[i];
+        sidhu lol hai
     }    
 }
 
