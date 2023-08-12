@@ -11,7 +11,7 @@ int thirdLargest(vector<int> &arr){
         return -1;
     }
 
-    int frist=0, second=INT_MIN, thrid=INT_MIN;
+    int frist=1, second=INT_MIN, thrid=INT_MIN;
 
     for(int i=0; i<arr.size(); i++){
         if(arr[i]>frist){
