@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void SortedandRotated(vector<int> &arr){
+void PrintZigZag(vector<int> &arr){
 
     for(int i=0; i<arr,szie()-2; i++){
         if(i%2==0){
@@ -20,6 +20,6 @@ void SortedandRotated(vector<int> &arr){
 
 int main(){
     vector<int> arr{4, 3, 7, 8, 6, 2, 1};
-    cout<<SortedandRotated(arr);
+    cout<<PrintZigZag(arr);
     return 0;
 }
