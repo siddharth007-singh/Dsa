@@ -18,7 +18,7 @@ void InterSection(vector<int> &arr1, vector<int> &arr2){
         else if(arr1[i]<arr2[j]){
             i++;
         }
-        else{
+        else{   
             j++;
         }
     }
@@ -45,8 +45,8 @@ void InterSection(vector<int> &arr1, vector<int> &arr2){
 // }
 
 int main(){
-    vector<int> arr1 = {1,4,5};
-    vector<int> arr2 = {3,4,5};
+    vector<int> arr1 = {1, 2, 2, 2, 3, 4};
+    vector<int> arr2 = {2, 2, 3, 3};
 
     InterSection(arr1, arr2);
 }

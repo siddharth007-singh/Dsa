@@ -7,11 +7,12 @@ using namespace std;
 
 int findGretElements(vector<int> &arr){
     int ans;
-    sort(arr, arr+arr.size());
+    sort(arr.begin(), arr.end());
 
     for(int i=0; i<arr.size()-2; i++){
-        cout<<arr[i];
+        ans = i;
     }
+    return ans;
 }
 
 int main(){
