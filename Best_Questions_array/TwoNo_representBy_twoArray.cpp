@@ -4,10 +4,11 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-int Addvector(vector<int> &arr1, vector<int> &arr2){
+vector<int> Addvector(vector<int> &arr1, vector<int> &arr2){
     int carry = 0;
     vector<int>ans;
     int i = arr1.size()-1;
@@ -51,8 +52,7 @@ int main(){
     vector<int>arr1{1,2};
     vector<int>arr2{2,1};
 
-    int ans = Addvector(arr1, arr2);
-    cout<<ans;
+    Addvector(arr1, arr2);
 
     return 0;
 }
