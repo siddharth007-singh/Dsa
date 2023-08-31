@@ -11,15 +11,15 @@ using namespace std;
 //Store the count of the element by using hashing(C++ STL);
 int FristRepeat(vector<int> &arr){
     unordered_map<int, int>hash;  
-    for(int i=0; i<arr.size(); i++){
+    for(int i=1; i<arr.size(); i++){
         hash[arr[i]]++;
     }
 
-    for(int i=0; i<arr.size(); i++){
+    for(int i=1; i<arr.size(); i++){
         if(hash[arr[i]]>1){
-            return arr[i]; 
+            return i; 
         }
-    }
+    }   
     return -1;
 }
 
@@ -41,8 +41,8 @@ int FristRepeat(vector<int> &arr){
 
 int main(){
     // vector<int>arr{1,5,3,4,3,5,6}; 
-    vector<int>arr{1,3,4,4,4,4,4,6,7,8}; 
+    vector<int>arr{1, 5, 3, 4, 3, 5, 6}; 
     int ans = FristRepeat(arr);
     cout<<ans;
-    return 0;
+    return 0;   
 }

@@ -12,6 +12,7 @@ void swapKth(vector<int> arr, int key){
 int main(){
     vector<int> arr{1,2,3,4,5,6,7};
     int key = 3;
-    cout<<swapKth(arr, key);
+    // cout<<swapKth(arr, key);
+    swap(arr[key-1], arr[arr.size()-key]);
     return 0;
 }
