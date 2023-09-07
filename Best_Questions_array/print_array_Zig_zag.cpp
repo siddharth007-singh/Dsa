@@ -6,7 +6,7 @@ using namespace std;
 
 void PrintZigZag(vector<int> &arr){
 
-    for(int i=0; i<arr,szie()-2; i++){
+    for(int i=0; i<arr,size()-2; i++){
         if(i%2==0){
             if(arr[i]>arr[i+1]){
                 swap(arr[i], arr[i+1]);
