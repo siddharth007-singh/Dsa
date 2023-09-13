@@ -5,15 +5,15 @@
 
 using namespace std;
 
-void RepeatedEle(vector<int> &arr){
-    int n= arr.size();
-    sort(arr, arr+n);
-    for(int i=0; i<n; i++){
-        if(arr[i]==arr[i+1]){
-            cout<<arr[i];
-        }
-    }
-}
+// void RepeatedEle(vector<int> &arr){
+//     int n= arr.size();
+//     sort(arr, arr+n);
+//     for(int i=0; i<n; i++){
+//         if(arr[i]==arr[i+1]){
+//             cout<<arr[i];
+//         }
+//     }
+// }
 
 int MissingEle(vector<int> &arr){
     int ans=0; 
@@ -28,9 +28,9 @@ int MissingEle(vector<int> &arr){
 }
 
 int main(){
-    vector<int> arr{7, 3, 4, 5, 5, 6, 2};
-    cout<<"Repeating Ele"<<RepeatedEle(arr);
+    vector<int> arr{1,2,3,5};
+    // cout<<"Repeating Ele"<<RepeatedEle(arr);
     int ans = MissingEle(arr);
-    cout<<"Missing Ele"<<ans;
+    cout<<ans;
     return 0;
 }
