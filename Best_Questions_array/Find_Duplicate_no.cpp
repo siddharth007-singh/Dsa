@@ -48,3 +48,31 @@ int main(){
     int ans = findDuplicate(arr);
     cout<<ans;
 }
+
+// class Solution{
+//   public:
+//     vector<int> duplicates(int arr[], int n) {
+//        unordered_map<int, int> hash;
+//        vector<int> ans;
+       
+//        for(int i=0; i<n; i++){
+//            hash[arr[i]]++;
+//        }
+       
+//         bool duplicate=false;
+       
+//         for(auto it:hash){
+//             if(it.second>1){
+//                 ans.push_back(it.first);
+//                 duplicate = true;
+//             }
+//         }
+//         sort(ans.begin(),ans.end());
+        
+//         if(!duplicate){
+//             return {-1};
+//         }
+        
+//         return ans;
+//     }
+// };
