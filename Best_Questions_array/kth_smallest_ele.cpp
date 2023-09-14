@@ -16,3 +16,5 @@ int main(){
     cout<<ans;
     return 0;
 }
+
+// Priority Queue through which we can use max-heap and min-heap and then we will solve the problem very easiy
