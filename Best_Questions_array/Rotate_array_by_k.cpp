@@ -5,14 +5,18 @@
 using namespace std;
 
 void RotateEle(vector<int> &arr, int k){
-    // for(int i=0; i<arr.size();i++){
-    //     arr[(i+k)%arr.size()]==arr[i];
-    // }
-    // k%=arr.size();
+    vector<int> temp(arr.size());
 
-    reverse(arr.begin(), arr.end());
-    reverse(arr.begin(), arr.end()+k);
-    reverse(arr.end()+k, arr.end());
+	for(int i=0; i<arr.size(); i++){
+		temp[(i+k)%arr.size()]=arr[i];
+	}
+
+	arr = temp;
+
+    // k%=arr.size();
+    // reverse(arr.begin(), arr.end());
+    // reverse(arr.begin(), arr.end()+k);
+    // reverse(arr.end()+k, arr.end());
 }
 
 // void printArray(vector<int> &arr){
