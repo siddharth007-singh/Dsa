@@ -29,8 +29,7 @@ void EvenSum(int n){
 
 int main() {
 	// Write your code here
-	int n;
-	cin>>n;
-	cout<<EvenSum(n);
+	int n = 132456;
+	EvenSum(n);
 	return 0;
 }
