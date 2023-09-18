@@ -1,24 +1,22 @@
+// So, for this problem we can solve in 3 ways 1.BrutFull approch (O(n2))  2.Best approh using Hashing (O(nLongN))  3. optimal approch using two pointer (O(N));
 #include<iostream>
 #include<vector>
 
 using namespace std;
 
-void CheckSum(vector<int> &arr, int k){
-    int s=0, e=arr.size()-1;
+//BruteFull approch
+void CheckSum(vector<int> &arr, k){
+    
+}
 
-    while(s<=e){
-        if(arr[s]+arr[e]==k){
-            cout<<"yes";
-            s++;
-            e--;
-        }
-        else if(arr[s] + arr[e] < k){
-            s++;
-        }
-        else{
-            e--;
-        }
-    }
+//Best approch
+void CheckSum(vector<int> &arr, k){
+
+}
+
+//Optimal approch
+void CheckSum(vector<int> &arr, k){
+
 }
 
 int main(){
