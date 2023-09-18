@@ -40,9 +40,23 @@ using namespace std;
 // }
 
 // //Optimal approch
-// void CheckSum(vector<int> &arr, k){
+void CheckSum(vector<int> &arr, k){
+    int s=0, e=arr.size()-1;
 
-// }
+    sort(arr.begin(), arr.end());
+
+    while(s<=e){
+        if(arr[s]+arr[e]==k){
+            cout<<"Found";
+        }
+        else if(arr[s]+arr[e]>k){
+            s++;
+        }
+        else{
+            e--;
+        }
+    }
+}
 
 int main(){
     vector<int> arr{3,2,4};
