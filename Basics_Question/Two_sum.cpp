@@ -19,9 +19,25 @@ using namespace std;
 // }
 
 // //Best approch
-void CheckSum(vector<int> &arr, k){
+// void CheckSum(vector<int> &arr, k){
+//     unordered_map<int,int> hash;
 
-}
+//     for(int i=0; i<arr.size(); i++){
+//         hash[arr[i]]++;
+
+//         int a = arr[i];
+//         int more = k-a;
+
+//         if(hash.find(more) !=hash.end()){
+//             cout<<"Find";
+//             // eturn {hash[more], i};
+//         }
+//         // increment part
+//         hash[a] = i;
+//     }
+
+
+// }
 
 // //Optimal approch
 // void CheckSum(vector<int> &arr, k){
