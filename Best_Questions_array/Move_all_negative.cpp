@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(){
-    vector<int>arr{1, 2, -3, 4,-5, 6};
+    vector<int>arr{1, 2, -3, 4,-4, -5};
 
     int l=0, h=arr.size()-1;
 
@@ -23,7 +23,10 @@ int main(){
         else{
             swap(arr[l], arr[h]);
         }
+
+        sort(arr.begin(), arr.end());
     }
+
 
     for(int i=0; i<arr.size(); i++){
         cout<<arr[i]<<" ";
