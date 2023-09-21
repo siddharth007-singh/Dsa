@@ -15,8 +15,8 @@ void MoveZero(vector<int> &arr){
 }
 
 int main(){
-    // vector<int> arr{1,1,0,2,0};
-    vector<int> arr{1, 0, 0};
+    vector<int> arr{1,1,0,2,0};
+    // vector<int> arr{1, 0, 0};
     MoveZero(arr);
     for(int i=0; i<arr.size(); i++){
         cout<<arr[i]<<" ";
