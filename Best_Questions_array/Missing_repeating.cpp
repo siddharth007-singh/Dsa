@@ -7,7 +7,20 @@
 using namespace std;
 
 int RepeatingAndMissing(vector<int> &arr){
-    
+    unordered_map<int,int>hash;
+    for(int i=0;i<arr.size();i++){
+        hash[arr[i]]++;
+    }
+
+    int missing = -1, repaeting= -1;
+    for(int i=0; i<arr.size(); i++){
+        if(hash[i]==2) repaeting=i;
+        else if(hash[i]==0) missing=i;
+
+        if(missing !=-1 && repaeting!=-1) break;
+    }
+
+    return{missing, repaeting};
 }
 
 
