@@ -12,15 +12,15 @@ int RepeatingAndMissing(vector<int> &arr){
         hash[arr[i]]++;
     }
 
-    int missing = -1, repaeting= -1;
+    int missing = -1, repaetin= -1;
     for(int i=0; i<arr.size(); i++){
-        if(hash[i]==2) repaeting=i;
-        else if(hash[i]==0) missing=i;
+        if(hash[i]==2) repaetin=i;
+        else if(hash[i]==0) missin=i;
 
-        if(missing !=-1 && repaeting!=-1) break;
+        if(missing !=-1 && repaetin!=-1) break;
     }
 
-    return{missing, repaeting};
+    return{missing, repaetin};
 }
 
 
