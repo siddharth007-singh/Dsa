@@ -2,8 +2,15 @@
 #include<vector>
 #include<algorithm>
 #include<climits>
+#include<unordered_map>
 
 using namespace std;
+
+int RepeatingAndMissing(vector<int> &arr){
+
+}
+
+
 
 // void RepeatedEle(vector<int> &arr){
 //     int n= arr.size();
