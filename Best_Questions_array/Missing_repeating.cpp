@@ -7,7 +7,7 @@
 using namespace std;
 
 int RepeatingAndMissing(vector<int> &arr){
-
+    
 }
 
 

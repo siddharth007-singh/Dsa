@@ -7,16 +7,16 @@
 using namespace std;
 
 //BruteFull approch
-void CheckSum(vector<int> &arr, int k){
-    for(int i=0; i<arr.size(); i++){
-        for(int j=i+1; j<arr.size(); j++){
-            if(arr[i]+arr[j]==k){
-                cout<<arr[i]<<" "<<arr[j];
-                break;
-            }
-        }
-    }
-}
+// void CheckSum(vector<int> &arr, int k){
+//     for(int i=0; i<arr.size(); i++){
+//         for(int j=i+1; j<arr.size(); j++){
+//             if(arr[i]+arr[j]==k){
+//                 cout<<arr[i]<<" "<<arr[j];
+//                 break;
+//             }
+//         }
+//     }
+// }
 
 // //Best approch
 // void CheckSum(vector<int> &arr, k){
@@ -40,23 +40,23 @@ void CheckSum(vector<int> &arr, int k){
 // }
 
 // //Optimal approch
-// void CheckSum(vector<int> &arr, k){
-//     int s=0, e=arr.size()-1;
+void CheckSum(vector<int> &arr, k){
+    int s=0, e=arr.size()-1;
 
-//     sort(arr.begin(), arr.end());
+    sort(arr.begin(), arr.end());
 
-//     while(s<=e){
-//         if(arr[s]+arr[e]==k){
-//             cout<<"Found";
-//         }
-//         else if(arr[s]+arr[e]>k){
-//             s++;
-//         }
-//         else{
-//             e--;
-//         }
-//     }
-// }
+    while(s<=e){
+        if(arr[s]+arr[e]==k){
+            cout<<"Found";
+        }
+        else if(arr[s]+arr[e]>k){
+            s++;
+        }
+        else{
+            e--;
+        }
+    }
+}
 
 int main(){
     vector<int> arr{3,2,4};
