@@ -40,7 +40,7 @@ using namespace std;
 // }
 
 // //Optimal approch
-void CheckSum(vector<int> &arr, k){
+void CheckSum(vector<int> &arr,int k){
     int s=0, e=arr.size()-1;
 
     sort(arr.begin(), arr.end());
