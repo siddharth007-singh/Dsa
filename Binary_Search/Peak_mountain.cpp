@@ -9,6 +9,9 @@ int Peak_Mountain(vector<int> &arr){
     int mid = s+(e-s)/2;
 
     while(s<e){
+
+        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]) return mid;
+
         if(arr[mid]<arr[mid]+1){
             s = mid+1;
         }
