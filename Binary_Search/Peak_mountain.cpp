@@ -22,7 +22,7 @@ int Peak_Mountain(vector<int> &arr){
 }
 
 int main(){
-    vector<int> arr{0,10,5,2};
+    vector<int> arr{1,2,1};
     int ans = Peak_Mountain(arr);
     cout<<ans;
     return 0;
