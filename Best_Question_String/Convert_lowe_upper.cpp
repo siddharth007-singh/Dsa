@@ -23,11 +23,11 @@ void convertToLowercase(char arr[]){
 }
 
 int main(){
-    // char arr[100] = "testing";
-    // convertToUppercase(arr);
+     char arr[100] = "testing";
+     convertToUppercase(arr);
 
-    char arr[100] = "TESTING";
-    convertToLowercase(arr);
+//    char arr[100] = "TESTING";
+//    convertToLowercase(arr);
     cout<<arr<<endl;
     return 0;
 }
