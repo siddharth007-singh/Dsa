@@ -4,25 +4,6 @@
 using  namespace std;
 
 string removeAdjacentString(string s){
-//    int n = s.length();
-//    int i=0, j=0;
-//    string newEle = "";
-//
-//    while(j<n){
-//        if(s[i]==s[j]){
-//            j++;
-//        }
-//
-//        else if(s[j]!=s[i] || j==n-1){
-//            newEle+=s[i];
-//            i = j;
-//            j++;
-//        }
-//    }
-//
-//    newEle += s[j - 1];
-//    return newEle;
-
     int n = s.length();
     string ans = "";
 
