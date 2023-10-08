@@ -1,5 +1,9 @@
-//
-// Created by ASUS on 10/8/2023.
-//
+#include <iostream>
+#include <string.h>
 
-#include "Replace_adjacents.h"
+using  namespace std;
+
+int main(){
+    cout<<"Testing that this will run correct or not";
+    return 0;
+}

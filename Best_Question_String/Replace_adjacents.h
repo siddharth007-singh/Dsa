@@ -6,11 +6,9 @@
 #define DSA_REPLACE_ADJACENTS_H
 
 
-
 class Replace_adjacents {
 
 };
-
 
 
 #endif //DSA_REPLACE_ADJACENTS_H
