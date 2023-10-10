@@ -27,6 +27,7 @@ bool panildrom(char arr[]){
             j--;
         }
     }
+    return true;
 }
 
 int main(){
