@@ -30,17 +30,18 @@ using namespace std;
 // }
 
 int missingNumber(vector<int> &arr){
-        int ans = 0;
-        for (int i = 0; i < arr.size(); i++) {
-            ans = ans ^ arr[i];
-        }
-    
-        // Compute XOR of all the elements from 1 to `n+1`
-        for (int i = 1; i <= arr.size() + 1; i++) {
-            ans = ans ^ i;
+        sort(array.begin(), array.end());
+        
+        int ans=0;
+        for(int i=0; i<n-1; i++){
+            ans = ans^array[i];
         }
         
-        return ans;    
+        for(int i=1; i<=n; i++){
+            ans = ans^i;
+        }
+        
+        return ans;   
 }
 
 int main(){
