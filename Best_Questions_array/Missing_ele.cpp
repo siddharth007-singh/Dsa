@@ -30,11 +30,12 @@ using namespace std;
 // }
 
 int missingNumber(vector<int> &arr){
-        sort(array.begin(), array.end());
+        int n  = arr.size();
+        sort(arr.begin(), arr.end());
         
         int ans=0;
         for(int i=0; i<n-1; i++){
-            ans = ans^array[i];
+            ans = ans^arr[i];
         }
         
         for(int i=1; i<=n; i++){
