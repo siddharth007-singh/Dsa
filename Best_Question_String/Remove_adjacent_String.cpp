@@ -1,11 +1,11 @@
-#include <iostream>
-#include <string.h>
+#include<iostream>
+#include<string.h>
 
-    using  namespace std;
+using namespace std;
 
 string removeAdjacentString(string s){
-    int n = s.length();
     string ans = "";
+    int n = s.length();
 
     for(int i=0; i<n; i++){
         if(ans.length()>=0){
@@ -19,15 +19,13 @@ string removeAdjacentString(string s){
         else{
             ans.push_back(s[i]);
         }
-    }
 
-    return  ans;
+    }
 }
 
 int main(){
     string s = "abbaca";
     cout<<"Output: "<<removeAdjacentString(s)<<endl;
     return 0;
+    return 0;
 }
-
-//Output must be : ca;
