@@ -21,6 +21,8 @@ string removeAdjacentString(string s){
         }
 
     }
+
+    return ans;
 }
 
 int main(){
