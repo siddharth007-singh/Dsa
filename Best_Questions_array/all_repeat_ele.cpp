@@ -15,7 +15,7 @@ void findRepeatingElements(vector<int> &arr){
     }
 
     // unordered_set<int> duplicates;
-    
+        
     for(auto x:m){
         if(x.second>1){
             cout<<x.first<<" ";
