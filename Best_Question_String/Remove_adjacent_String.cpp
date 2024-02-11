@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string.h>
-#include<stack>x`
+#include<stack>
 
 using namespace std;
 
@@ -29,6 +29,5 @@ string removeAdjacentString(string s){
 int main(){
     string s = "abbaca";
     cout<<"Output: "<<removeAdjacentString(s)<<endl;
-    return 0;
     return 0;
 }
